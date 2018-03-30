@@ -1,0 +1,6 @@
+<launch>
+
+<include file="$(find truck)/launch/imu.launch" />
+<include file="$(find truck)/launch/urg.launch" />
+
+</launch>
