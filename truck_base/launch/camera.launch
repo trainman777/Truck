@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>
+	<arg name="name"/>
+	<node pkg="usb_cam" type="usb_cam_node" name="$(arg name)_CAMERA">
+		<param name="image_width" value="320"/>
+		<param name="image_height" value="240"/>
+    <param name="pixel_format" value="yuyv" />
+		<param name="camera_info_url" value="file://$(find sipi_controller)/config/head_camera.yaml"/>
+		<param name="framerate" value="10"/>
+		<remap from="$(arg name)_CAMERA/image_raw" to="$(arg name)/camera/image"/> -->
+		<remap from="$(arg name)_CAMERA/camera_info" to="$(arg name)/camera/camera_info"/> -->
+	</node>
+</launch>

@@ -1,0 +1,4 @@
+<launch>
+	<include file="$(find truck_base)/launch/truck_base.launch" />
+	<include file="$(find truck_base)/launch/odom.launch" />
+</launch>

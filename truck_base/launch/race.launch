@@ -1,0 +1,6 @@
+<launch>
+
+	rostopic pub -1 cmd std_msgs/String "LOAD_KML /home/odroid/race.kml"
+	rostopic pub -1 cmd std_msgs/String "DRIVE_UTM"
+
+</launch>

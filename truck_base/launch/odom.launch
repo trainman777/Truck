@@ -1,0 +1,4 @@
+<launch>
+	<node pkg="rostopic" type="rostopic" name="load_odom" args="pub -1 cmd std_msgs/String 'LOAD_ODOM /home/odroid/odom_goals.txt' "/>
+ 	<node pkg="rostopic" type="rostopic" name="drive_odom" args="pub -1 cmd std_msgs/String 'DRIVE_ODOM' "/>
+</launch>

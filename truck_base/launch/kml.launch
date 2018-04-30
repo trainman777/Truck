@@ -1,0 +1,4 @@
+<launch>
+	<node pkg="rostopic" type="rostopic" name="load_kml" args="pub cmd std_msgs/String 'LOAD_KML /home/odroid/race.kml' "/>
+	<node pkg="rostopic" type="rostopic" name="drive_kml" args="pub -1 cmd std_msgs/String 'DRIVE_UTM' "/>
+</launch>
